@@ -1,0 +1,127 @@
+#page-contact {
+
+    .wrapper {
+        background-color: #fff;
+        border-radius: 16px;
+        margin-block: 100px;
+        padding-block: 50px;
+
+    .page-contact-text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-inline: auto;
+
+        label {
+            margin-bottom: 5px;
+
+            span {
+                color: red;
+                margin-left: 16px;
+            }
+        }
+
+        input,select {
+            width: 100%;
+            border: 1px solid #333;
+            padding: 8px;
+            height: 40px;
+            margin-bottom: 40px;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #333;
+            padding: 8px;
+            height: 120px;
+            margin-bottom: 40px;
+        } 
+
+        .select-box {
+            position: relative;
+
+            select {
+                appearance: none;
+                color: #5c4b3b;
+
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                top: 23%;
+                right: 16px;
+                // transform: translateY(-50%);
+
+                width: 0;
+                height: 0;
+
+                border-top: 8px solid #8FA78E;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                pointer-events: none;
+            }
+        }
+
+        .page-contact-btn {
+            background:  #f6d776;
+            border-radius: 24px;
+            padding: 16px 32px;
+            margin-block: 40px;
+            transition: all .3s ease;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: "→";
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10%;
+            }
+    
+            &:hover {
+                background: #f3c94f;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 16px rgba(0,0,0,.1);
+            }
+        }
+    }
+
+    .page-contact-note {
+        text-align: center;
+        margin-top: 56px;
+
+        p {
+            display: inline-block;
+            border-bottom: 1px dotted #333;
+            padding-bottom: 16px;
+        }
+    }
+    }
+}
+
+@media (max-width:770px) {
+
+    #page-contact {
+
+        .wrapper {
+            margin-block: 0;
+            padding-block: 50px;
+        }
+    }
+}
+
+@media (max-width:426px) {
+
+    #page-contact {
+
+        form {
+            width: 90%;
+        }
+    }
+}
