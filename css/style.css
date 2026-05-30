@@ -58,6 +58,7 @@
   pointer-events: none;
 }
 #page-contact .wrapper form .page-contact-btn {
+  text-align: center;
   background: #f6d776;
   border-radius: 24px;
   padding: 16px 32px;
